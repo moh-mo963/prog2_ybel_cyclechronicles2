@@ -1,22 +1,19 @@
 package cyclechronicles;
 
-/** An order for a bike shop. */
 public class Order {
-  /**
-   * Determine the type of bike to be repaired.
-   *
-   * @return type of bicycle
-   */
-  public Type getBicycleType() {
-    throw new UnsupportedOperationException();
-  }
+    private final Type type;
+    private final String customer;
 
-  /**
-   * Determine the customer who placed this order.
-   *
-   * @return name of customer
-   */
-  public String getCustomer() {
-    throw new UnsupportedOperationException();
-  }
+    public Order(Type type, String customer) {
+        this.type = type;
+        this.customer = customer;
+    }
+
+    public Type getBicycleType() {
+        return type;
+    }
+
+    public String getCustomer() {
+        return customer;
+    }
 }
